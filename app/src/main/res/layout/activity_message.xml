@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MessageFragment"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:id="@+id/top"
+        android:background="@drawable/custom_btn_no_corner">
+
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_arrow_back_white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@string/todo"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chat_profile_photo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_person_white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/chat_username"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:text="@string/burak_karaduman"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp" />
+
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/top"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/adView"
+     />
+
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/send_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_attach_file"
+            android:contentDescription="@string/todo" />
+
+
+        <EditText
+            android:id="@+id/message_for_send"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/custom_edit_text_message"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="@string/bir_mesaj_yazin"
+            android:textColorHint="#BFBFBF"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            android:layout_marginStart="4dp"
+            android:autofillHints=""
+            android:inputType="textShortMessage" />
+
+        <ImageView
+            android:id="@+id/send_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_send"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/send_image" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

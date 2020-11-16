@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:longClickable="true">
+
+    <LinearLayout
+        android:id="@+id/first_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFF"/>
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:text="@string/username"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/question"
+        android:layout_centerHorizontal="true"
+        android:checked="true"
+        android:theme="@style/ToggleBar"/>
+
+
+    <TextView
+        android:id="@+id/answered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_above="@id/question"
+        android:layout_marginLeft="65dp"
+        android:text="@string/cevaplandı"
+        android:textColor="@color/colorPrimaryTwo"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:layout_marginStart="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+
+
+    <ImageView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/first_linear_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/question" />
+
+
+    <TextView
+        android:id="@+id/commentText"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/question"
+        android:layout_marginTop="5dp"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/commentText"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>

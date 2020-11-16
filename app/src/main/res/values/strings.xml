@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">MathGeo</string>
+    <string name="register">K A Y I T O L</string>
+    <string name="login">G İ R İ Ş Y A P</string>
+    <string name="password">Şifre</string>
+    <string name="email">E-Posta</string>
+    <string name="statement">Matematik ve Geometri Sorun Kalmasın</string>
+    <string name="logo">logo</string>
+    <string name="close_app">close_app</string>
+    <string name="profil_maker">Profil Oluştur</string>
+    <string name="surname">Soyad</string>
+    <string name="name">Ad</string>
+    <string name="ana_ekran">Ana Ekran</string>
+    <string name="messages">Mesajlar</string>
+    <string name="upload_photo">Fotoğraf Yükle</string>
+    <string name="profile">Profil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="share">P A Y L A Ş</string>
+    <string name="ShareQuestion">Sorunu Paylaş</string>
+    <string name="ipucu">Kamera ikonuna tıklayarak sorunu yükleyebilirsin.</string>
+    <string name="comment">Soruyla ilgili eklemek istedğin bir şey var mı?</string>
+    <string name="question">question</string>
+    <string name="Yükleniyor">Yükleniyor...</string>
+    <string name="username">profile_name</string>
+    <string name="cevaplandı">Cevaplandı</string>
+    <string name="burak_karaduman">Burak Karaduman</string>
+    <string name="photos">Fotoğraflar</string>
+    <string name="_50">0</string>
+    <string name="answered_questions">Cevaplar</string>
+    <string name="score">Puan</string>
+    <string name="burak_gmail_com">burak@gmail.com</string>
+    <string name="log_out">ÇIKIŞ YAP</string>
+    <string name="type_a_message">      Bir mesaj yazın</string>
+    <string name="send_image">send_image</string>
+    <string name="thanks">Teşekkürler</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_fullscreen1">FullscreenActivity</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_unit_id_home">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="bir_mesaj_yazin">Bir mesaj yazın</string>
+    <string name="todo">TODO</string>
+
+</resources>

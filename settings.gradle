@@ -1,0 +1,3 @@
+include ':app'
+include ':app', ':library'
+rootProject.name = "MathGeo"

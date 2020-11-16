@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/home_fragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/ana_ekran"/>
+
+    <item
+        android:id="@+id/message_fragment"
+        android:icon="@drawable/ic_message"
+        android:title="@string/messages"/>
+
+    <item
+        android:id="@+id/add_fragment"
+        android:icon="@drawable/ic_add"
+        android:title="@string/upload_photo"/>
+
+    <item
+        android:id="@+id/profile_fragment"
+        android:icon="@drawable/ic_person"
+        android:title="@string/profile"/>
+
+</menu>

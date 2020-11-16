@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "508777263600",
+    "firebase_url": "https://mathgeo-855b0.firebaseio.com",
+    "project_id": "mathgeo-855b0",
+    "storage_bucket": "mathgeo-855b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508777263600:android:788e7b4ad7baf741e46d35",
+        "android_client_info": {
+          "package_name": "com.example.mathgeo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508777263600-7p5nc2na1qol82vkkt55qk95h39qge6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEwtDbqwaFJYohjfbnDwjqpDGBRa_nAyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508777263600-7p5nc2na1qol82vkkt55qk95h39qge6n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

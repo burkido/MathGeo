@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:googleads="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:id="@+id/first_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/share_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/ShareQuestion"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="25dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_close"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/close_app"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentEnd="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_linear_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:text="@string/ipucu"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="25dp" />
+
+
+        <ImageView
+            android:id="@+id/add_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/ic_add_a_photo"
+            android:contentDescription="@string/question" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/comment"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/add_comment"
+            android:layout_width="350dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:autofillHints=""
+            android:background="@drawable/custom_edit_text"
+            android:inputType="text" />
+
+        <ProgressBar
+            android:id="@+id/indeterminateBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:outlineSpotShadowColor="@color/colorAccent"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+       android:layout_above="@id/upload_image"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2051889947393127/8794870340">
+    </com.google.android.gms.ads.AdView>
+
+
+
+    <Button
+        android:id="@+id/upload_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_btn"
+        android:text="@string/share"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+</RelativeLayout>
